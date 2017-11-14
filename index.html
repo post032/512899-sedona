@@ -32,7 +32,7 @@
             <h3>Настоящий городок</h3>
             <span class="features-number">-№1-</span>
             <p> Седона не аттракцион для туристов, там течет своя жизнь</p>
-            <img src="img/features/city.jpg" width="800" height="400">
+            <img src="img/features/city.jpg" width="800" height="400" alt="город Седона">
           </li>
           <li class="features-item-svg">
             <h3>Жилье</h3>
@@ -50,7 +50,7 @@
             <h3>Там есть мост Дьявола</h3>
             <span class="features-number">-№2-</span>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь.</p>
-            <img src="img/features/bridge-devil.jpg" width="800" height="400">
+            <img src="img/features/bridge-devil.jpg" width="800" height="400" alt="мост Дьявола">
           </li>
           <li class="features-item">
             <h3>Небольшая площадь</h3>
@@ -84,16 +84,16 @@
               <label> Дата выезда:
                 <input type="date" name="leave">
               </label>
-              <label> Взрослые:
-                <button value="minus">-</button>
-                <input type="number" name="number">
-                <button value="plus">+</button>
-              </label>
-              <label> Дети:
-                <button value="minus">-</button>
-                <input type="number" name="number">
-                <button value="plus">+</button>
-              </label>
+              <div class="count">
+                <label for="adult">Взрослые:</label>
+                  <button value="minus">-</button>
+                  <input id="adult" type="number" name="number">
+                  <button value="plus">+</button>
+                <label for="children">Дети:</label>
+                  <button value="minus">-</button>
+                  <input id="children" type="number" name="number">
+                  <button value="plus">+</button>
+              </div>
                 <button value="Найти" name="search">Найти</button>
               </form>
             </div>

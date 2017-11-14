@@ -27,7 +27,49 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр отелей</h2>
-          <!--здесь будет форма фильтров-->
+            <form method="get">
+              <div class="filters-item">
+                <p>ИНФРАСТРУКТУРА:</p>
+                <label> БАССЕЙН
+                  <input type="checkbox" checked>
+                </label>
+                <label> ПАРКОВКА
+                  <input type="checkbox">
+                </label>
+                <label> WI-FI
+                  <input type="checkbox">
+                </label>
+              </div>
+              <div class="filters-item">
+                <p>ТИП ЖИЛЬЯ:</p>
+                <label> ГОСТИНИЦА
+                  <input type="checkbox" checked>
+                </label>
+                <label> МОТЕЛЬ
+                  <input type="checkbox" checked>
+                </label>
+                <label> АПАРТАМЕНТЫ
+                  <input type="checkbox" checked>
+                </label>
+              </div>
+              <div class="filters-item">
+                <p>Стоимость в сутки (Р):<p>
+                <label>
+                  <input type="text" placeholder="ОТ 0">
+                </label>
+                <label>
+                  <input type="text" placeholder="ДО 3000">
+                </label>
+              </div>
+              <button name="show" value="show">ПОКАЗАТЬ</button>
+            </form>
+            <div class="sort">
+              <p>Найдено: 3</p>
+              <p>СОРТИРОВКА:</p>
+              <a href="#">ПО ЦЕНЕ</a>
+              <a href="#">ПО ТИПУ</a>
+              <a href="#">ПО РЕЙТИНГУ</a>
+            </div>
       </section>
 
       <div class="hotels">

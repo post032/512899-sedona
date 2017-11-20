@@ -48,8 +48,7 @@ a {
 }
 
 .site-navigation a:active {
-    color: #000000;
-    opacity: 30%;
+    color: rgba(0,0,0,0.3);
 }
 
 .logo {
@@ -113,6 +112,7 @@ a {
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
+    text-decoration: none;
 }
 
 .button:hover,
@@ -122,20 +122,20 @@ a {
 
 .button:active {
     background-color: #503e33;
-    color: #ffffff;
-    opacity: 30%;
+    color: rgba(255,255,255,0.3);
 }
 
 .modal {
-  margin-left: 565px;
-  position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
     border: 1px solid #ffffff;
     width: 568px;
     height: 395px;
     background-color: #ffffff;
     text-align: center;
 }
-
+/*синяя кнопка найти*/
 .modal-button {
     background-color: #81b3d2;
     width: 458px;
@@ -144,6 +144,16 @@ a {
     font-size: 21px;
     line-height: 26px;
     font-weight: 700;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    background-color: #669ec0;
+}
+
+.modal-button:active {
+    background-color: #5496bd;
+    color: rgba(255,255,255,0.3);
 }
 
 input {
@@ -158,7 +168,158 @@ input {
     text-align: center;
 }
 
+/*подвал*/
 .main-footer {
     color: #000000;
     background: rgba(249,251,546,0.9);
+}
+
+.footer-hashtag {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button {
+    color: #000000;
+}
+
+.footer-copyright {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+    text-align: right;
+}
+
+/*стилизация для внутренней*/
+/*фильтр*/
+.filters {
+    background: url("../img/filter_background.jpg") no-repeat center;
+}
+
+.filters-item p {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.filters-item label {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+.filters-item input {
+  color: #ffffff
+}
+
+/*кнопка - показать (отфильтровать)*/
+.button-show {
+    border: 1px solid #ffffff;
+    background-color: rgba(0,0,0,0);
+    color: #ffffff;
+    width: 133px;
+    height: 32px;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.button-show:hover,
+.button-show:focus {
+    background-color: #ffffff;
+    color: #000000
+}
+
+/*сортировка (нужно сделать состояние - активное)*/
+.sort a{
+    color: rgba(0,0,0,0.3);
+    border-bottom: 1px dashed rgba(0,0,0,0.3);
+}
+
+.sort a:hover,
+.sort a:focus {
+    color: #81b3d2;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+.sort a:active {
+  color: #000000;
+  border-bottom: 1px dashed rgba(0,0,0,0)
+}
+
+/*отели*/
+
+.hotels h3 {
+  color: #000000;
+    font-size: 21px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+.hotels h3:hover,
+.hotels h3:focus {
+   color: #81b3d2;
+}
+
+.hotels h3:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.readmore p,
+.booking p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+}
+
+/*кнопки*/
+
+.booking a{
+    background-color: #766357;
+    width: 142px;
+    height: 27px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.booking a:hover,
+.booking a:focus {
+    background-color: #604e43;
+}
+
+.booking a:active {
+    background-color: #503e33;
+    color: rgba(255,255,255,0.3);
+}
+
+.readmore a{
+    background-color: #81b3d2;
+    width: 142px;
+    height: 27px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.readmore a:hover,
+.readmore a:focus {
+    background-color: #669ec0;
+}
+
+.readmore a:active {
+    background-color: #5496bd;
+    color: rgba(255,255,255,0.3);
 }

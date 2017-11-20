@@ -37,7 +37,7 @@ a {
     list-style: none;
 }
 
-/*нужно разобраться с цветом ссылок навигации!!!!!*/
+/*menu*/
 .site-navigation a {
     color: #000000;
 }
@@ -47,13 +47,13 @@ a {
     color: #81b3d2;
 }
 
-.site-navigation a:visited {
-    color: #766357;
-}
-
 .site-navigation a:active {
     color: #000000;
     opacity: 30%;
+}
+
+.logo {
+/*center*/
 }
 
 /*преимущества*/
@@ -75,14 +75,17 @@ a {
     color: #ffffff;
 }
 
-/*горы не отображаются!!!!!*/
+/*горы + name*/
 .intro {
-    background-image: url("../img/background_photo.jpg") no-repeat;
-    background-position: center;
+    background: url("../img/background_photo.jpg") no-repeat center;
     width: 1200px;
     height: 800px;
+    text-align: center;
+    margin: auto;
+    margin-top:
 }
 
+/*заинтересовались?*/
 .search-button {
     background-color: #ffffff;
     text-align: center;
@@ -100,6 +103,7 @@ a {
     font-weight: 400;
 }
 
+/*коричневая кнопка*/
 .button {
     background-color: #766357;
     color: #ffffff;
@@ -111,12 +115,25 @@ a {
     text-transform: uppercase;
 }
 
+.button:hover,
+.button:focus {
+    background-color: #604e43;
+}
+
+.button:active {
+    background-color: #503e33;
+    color: #ffffff;
+    opacity: 30%;
+}
+
 .modal {
+  margin-left: 565px;
   position: absolute;
     border: 1px solid #ffffff;
     width: 568px;
     height: 395px;
-    background-color: #ffffff
+    background-color: #ffffff;
+    text-align: center;
 }
 
 .modal-button {
@@ -133,7 +150,15 @@ input {
     margin: 15px;
     background-color: #f2f2f2;
     width: 346px;
-    height: 38px;
-    text-align: justify;
+    height: 38px
 
+}
+
+.map {
+    text-align: center;
+}
+
+.main-footer {
+    color: #000000;
+    background: rgba(249,251,546,0.9);
 }

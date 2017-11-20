@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #000000;
+    text-transform: uppercase;
+
+    background-color: #f2f2f2;
+  }
+.visual-hidden {
+    display: none;
+  }
+
+a {
+    text-decoration: none;
+}
+
+.features h2 {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+.main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.site-navigation  {
+    list-style: none;
+}
+
+/*нужно разобраться с цветом ссылок навигации!!!!!*/
+.site-navigation a {
+    color: #000000;
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+    color: #81b3d2;
+}
+
+.site-navigation a:visited {
+    color: #766357;
+}
+
+.site-navigation a:active {
+    color: #000000;
+    opacity: 30%;
+}
+
+/*преимущества*/
+
+.features,
+.features-list {
+    list-style: none;
+    text-align: center;
+}
+
+
+.features-item h3 {
+    font-size: 21px;
+    line-height: 21px;
+}
+
+.features-item .blue {
+    background-color: #81b3d2;
+    color: #ffffff;
+}
+
+/*горы не отображаются!!!!!*/
+.intro {
+    background-image: url("../img/background_photo.jpg") no-repeat;
+    background-position: center;
+    width: 1200px;
+    height: 800px;
+}
+
+.search-button {
+    background-color: #ffffff;
+    text-align: center;
+  }
+
+.interest {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.search-data {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.button {
+    background-color: #766357;
+    color: #ffffff;
+    width: 568px;
+    height: 86px;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.modal {
+  position: absolute;
+    border: 1px solid #ffffff;
+    width: 568px;
+    height: 395px;
+    background-color: #ffffff
+}
+
+.modal-button {
+    background-color: #81b3d2;
+    width: 458px;
+    height: 58px;
+    color: #ffffff;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+input {
+    margin: 15px;
+    background-color: #f2f2f2;
+    width: 346px;
+    height: 38px;
+    text-align: justify;
+
+}

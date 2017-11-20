@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css\style.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
   </head>
 
   <body>
@@ -23,59 +26,69 @@
     </header>
 
     <main class="conteiner">
-      <img src="img/sedona.png" width="458" height="352" alt="sedona">
+      <div class="intro">
+        <img class="intro-center" src="img/sedona.png" width="458" height="352" alt="sedona">
+      </div>
       <section class="features">
         <h1>Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
         <h2>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</h2>
+
         <ul class="features-list">
-          <li class="features-item-blue">
-            <h3>Настоящий городок</h3>
-            <span class="features-number">-№1-</span>
-            <p> Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <li class="features-item">
+            <div class="blue">
+              <h3>Настоящий городок</h3>
+              <span>- №1 -</span>
+              <p> Седона не аттракцион для туристов, там течет своя жизнь</p>
+            </div>
             <img src="img/features/city.jpg" width="800" height="400" alt="город Седона">
           </li>
-          <li class="features-item-svg">
+          <li class="features-item">
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
-          <li class="features-item-svg">
+          <li class="features-item">
             <h3>Еда</h3>
             <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="features-item-svg">
+          <li class="features-item">
             <h3>Сувениры</h3>
             <p>Все сувениры не только китайского,но и местного производства!</p>
           </li>
-          <li class="features-item-blue">
-            <h3>Там есть мост Дьявола</h3>
-            <span class="features-number">-№2-</span>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь.</p>
+          <li class="features-item">
+            <div class="blue">
+              <h3>Там есть мост Дьявола</h3>
+              <span>- №2 -</span>
+              <p>Да, по нему можно пройти! Если конечно вы осмелитесь.</p>
+            </div>
             <img src="img/features/bridge-devil.jpg" width="800" height="400" alt="мост Дьявола">
           </li>
           <li class="features-item">
             <h3>Небольшая площадь</h3>
-            <span class="features-number">-№3-</span>
+            <span>- №3 -</span>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
           <li class="features-item">
             <h3>Красивая дорога</h3>
-            <span class="features-number">-№4-</span>
+            <span>- №4 -</span>
             <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
           </li>
           <li class="features-item">
             <h3>Мало туристов</h3>
-            <span class="features-number">-№1-</span>
+            <span>- №5 -</span>
             <p>Большенство едет в Гранд Каньон и толпится там.</p>
           </li>
         </ul>
       </section>
 
       <section class="search">
-        <h2 class="visual-hidden">Поиск гостиниц в Седоне</h2>
-          <p class="searchhotels">Заинтересовались?</p>
-          <p>Укажите предполагаемые даты поездки,<br>
+        <div class="search-button">
+          <h2 class="visual-hidden">Поиск гостиниц в Седоне</h2>
+          <p class="interest">Заинтересовались?</p>
+          <p class="search-data">Укажите предполагаемые даты поездки,<br>
              и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <button class="button">Поиск гостиниц в Седоне</button>
+        </div>
+          <img src="img/map.jpg" alt="Карта Седоны">
           <div class="modal">
             <form method="get">
               <label> Дата заезда:
@@ -94,7 +107,7 @@
                   <input id="children" type="number" name="number">
                   <button value="plus">+</button>
               </div>
-                <button value="Найти" name="search">Найти</button>
+                <button class="modal-button" value="Найти" name="search">Найти</button>
               </form>
             </div>
 

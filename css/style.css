@@ -80,8 +80,8 @@ a {
     width: 1200px;
     height: 800px;
     text-align: center;
-    margin: auto;
-    margin-top:
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*заинтересовались?*/
@@ -129,7 +129,6 @@ a {
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    border: 1px solid #ffffff;
     width: 568px;
     height: 395px;
     background-color: #ffffff;
@@ -200,6 +199,10 @@ input {
 }
 
 /*стилизация для внутренней*/
+
+.navigation-active a {
+    color: #766357;
+}
 /*фильтр*/
 .filters {
     background: url("../img/filter_background.jpg") no-repeat center;
@@ -218,13 +221,13 @@ input {
 }
 
 .filters-item input {
-  color: #ffffff
+    color: #ffffff
 }
 
 /*кнопка - показать (отфильтровать)*/
 .button-show {
     border: 1px solid #ffffff;
-    background-color: rgba(0,0,0,0);
+    background-color: transparent;
     color: #ffffff;
     width: 133px;
     height: 32px;
@@ -237,7 +240,7 @@ input {
 .button-show:hover,
 .button-show:focus {
     background-color: #ffffff;
-    color: #000000
+    color: #000000;
 }
 
 /*сортировка (нужно сделать состояние - активное)*/
@@ -253,14 +256,19 @@ input {
 }
 
 .sort a:active {
-  color: #000000;
-  border-bottom: 1px dashed rgba(0,0,0,0)
+    color: #000000;
+    border-bottom: none;
+}
+
+.sort-active {
+    color: #81b3d2;
+    border-bottom: none;
 }
 
 /*отели*/
 
 .hotels h3 {
-  color: #000000;
+    color: #000000;
     font-size: 21px;
     line-height: 25px;
     font-weight: 700;

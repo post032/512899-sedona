@@ -159,8 +159,7 @@ input {
     margin: 15px;
     background-color: #f2f2f2;
     width: 346px;
-    height: 38px
-
+    height: 38px;
 }
 
 .map {
@@ -191,11 +190,26 @@ input {
     color: #000000;
 }
 
+/*поменяла на svg и картинка лого почему то уползла под футер*/
 .footer-copyright {
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
-    text-align: right;
+    width: 125px;
+    height: 50px;
+}
+
+.logo-html {
+    fill: #231f20;
+}
+
+.logo-html:hover,
+.logo-html:focus {
+    fill: #81b3d2;
+}
+
+.logo-html:active {
+    fill: #bdbbbc;
 }
 
 /*стилизация для внутренней*/
@@ -221,7 +235,7 @@ input {
 }
 
 .filters-item input {
-    color: #ffffff
+    color: #ffffff;
 }
 
 /*кнопка - показать (отфильтровать)*/
@@ -260,7 +274,7 @@ input {
     border-bottom: none;
 }
 
-.sort-active {
+.sort .sort-active {
     color: #81b3d2;
     border-bottom: none;
 }

@@ -40,7 +40,6 @@ input[type="radio"].visually-hidden {
 }
 
 .basic {
-  margin: 0;
   padding: 0;
   width: 1200px;
   margin: 0 auto;
@@ -109,11 +108,49 @@ input[type="radio"].visually-hidden {
 
 .description {
   width: 1200px;
-  min-height: 216px;
+  min-height: 218px;
   background-color: #ffffff;
-  margin-top: -245px;
-
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+.description h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.description::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 509px;
+  left: 0;
+  right: 0;
+  bottom: 430px;
+  background: url("../img/kant.png") no-repeat top center;
+}
+
+.description h1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  flex-shrink: 1;
+  margin-left: 370px;
+  margin-right: 370px;
+  margin-top: 12px;
+}
+
+.description h2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
 .features-list {
   padding: 0;
   margin: 0;
@@ -152,6 +189,9 @@ input[type="radio"].visually-hidden {
 .features-item-1 .blue-img {
   padding: 0;
   margin: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .features-item-2 {
@@ -173,12 +213,21 @@ input[type="radio"].visually-hidden {
 .intro {
   margin: 0;
   padding: 0;
-  background: url("../img/background_photo.jpg") no-repeat top center;
+  background: url("../img/background_photo.jpg") no-repeat center;
+  background-position: center -55px;
   width: 1200px;
-  height: 800px;
-}
-.intro-item {
+  height: 510px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 
+}
+
+
+.intro .intro-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*заинтересовались?*/
@@ -331,8 +380,8 @@ input {
   padding: 0;
   background: url("../img/filter_background.jpg") no-repeat top center;
   width: 1200px;
-  height: 330px;
-  /*overflow: hidden;*/
+  min-height: 330px;
+
 
 }
 
@@ -379,10 +428,9 @@ input {
 
 .checkbox-custom {
   position: relative;
-  width: 27px;
+  width: 23px;
   height: 23px;
-  border: 2px solid #ffffff;
-  border-radius: 3px;
+  background: url("../img/checkbox-off.svg") no-repeat center;
   margin-right: 18px;
   margin-bottom: 26px;
 }
@@ -548,7 +596,7 @@ input {
   padding-left: 70px;
   display: flex;
   justify-content: flex-start;
-  height: 86px;
+  min-height: 86px;
   background-color: #ffffff;
   align-items: center;
 
@@ -598,10 +646,13 @@ input {
 /*отели*/
 
 .hotels h3 {
+  margin: 0;
+  padding: 0;
   color: #000000;
   font-size: 21px;
   line-height: 25px;
   font-weight: 700;
+
 }
 
 .hotels h3:hover,
@@ -615,6 +666,8 @@ input {
 
 .readmore p,
 .booking p {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -625,7 +678,7 @@ input {
 .booking a{
   background-color: #766357;
   width: 142px;
-  height: 27px;
+  min-height: 27px;
   color: #ffffff;
   font-size: 14px;
   line-height: 21px;
@@ -641,17 +694,7 @@ input {
   background-color: #503e33;
   color: rgba(255,255,255,0.3);
 }
-.booking .booking-button {
-  width: 142px;
-  height: 27px;
-  padding: 7px 16px;
-}
 
-.readmore .readmore-button {
-  width: 110px;
-  height: 27px;
-  padding: 7px 16px;
-}
 .readmore a{
   background-color: #81b3d2;
   width: 142px;
@@ -681,7 +724,7 @@ input {
   align-items: center;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  height: 152px;
+  min-height: 152px;
   }
 
 .hotel {
@@ -690,14 +733,15 @@ input {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-start;
+  align-content: space-between;
   width: 260px;
-  height: 90px;
+  flex-grow: 0;
+  min-height: 90px;
 }
 
 .hotel h3 {
-  margin:0;
-  padding: 0;
+  margin: 0;
+  padding-bottom: 5px;
   width: 100%;
   text-align: left;
 
@@ -706,27 +750,49 @@ input {
 .itempicture {
   margin-left: 70px;
   margin-right: 30px;
+  display: flex;
+  align-items: center;
+
 }
 
 .readmore {
+  margin: 0;
   width: 50%;
   text-align: left;
+
 }
 .booking {
+  margin: 0;
   width: 50%;
   text-align: left;
 }
 
+.booking .booking-button {
+  width: 142px;
+  padding: 7px 16px;
+}
+
+.readmore .readmore-button {
+  width: 110px;
+  padding: 7px 16px;
+}
 .rating {
   width: 100px;
-  height: 90px;
-  margin-left: 525px;
+  min-height: 90px;
+  flex-grow: 1;
   margin-right: 65px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-end;
 }
-.starfull {
 
+
+.hotels:first-of-type {
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotels:last-of-type {
+  border-bottom: 1px solid #e5e5e5;
 }

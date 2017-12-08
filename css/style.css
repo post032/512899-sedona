@@ -598,7 +598,7 @@ input[type="radio"].visually-hidden {
   background-color: #cbdda9;
   background: url("../img/map.jpg") no-repeat top;
   height: 593px;
-  margin-bottom: -120px;
+
 
 }
 
@@ -613,7 +613,10 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   min-height: 120px;
 
-
+}
+.footer-opacity.main-footer {
+  position: relative;
+  margin-top: -120px;
 }
 
 .footer-hashtag {
@@ -697,7 +700,8 @@ input[type="radio"].visually-hidden {
 .filters {
   margin: 0;
   padding: 0;
-  background: url("../img/filter_background.jpg") no-repeat top center;
+  background: url("../img/filter_background.jpg") no-repeat;
+  background-position: 0 -55px;
   width: 1200px;
   min-height: 304px;
 
@@ -708,28 +712,27 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   height: 218px;
-
 }
 .filters-item {
-
+  margin: 0;
   width: 160px;
-  height: 200px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  margin-left: 70px;
-  margin-top: 22px;
-  margin-bottom: 24px;
+  min-height: 155px;
   color: #ffffff;
 }
 
+.filters-item:first-of-type {
+  margin-left: 71px;
+}
+.filters-item:nth-last-of-type(2) {
+ margin-left: 97px;
+}
+
 .filters-item p {
-  margin-left: 30px;
+  text-align: left;
+  margin-top: 28px;
+  margin-bottom: 22px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -762,7 +765,7 @@ input[type="radio"].visually-hidden {
   height: 23px;
   background: url("../img/checkbox-off.svg") no-repeat center;
   margin-right: 18px;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
 }
 
 
@@ -776,27 +779,29 @@ input[type="radio"].visually-hidden {
   content: "";
   display: block;
   position: absolute;
-  top: 2px;
-  right: 2px;
-  bottom: 2px;
-  left: 2px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
   background: url("../img/checkbox-on.svg") no-repeat center;
 }
 
 
 /*стилизация "стоимость в сутки"*/
 .filter-range {
-  width: 330px;
-  margin-top: 24px;
-  margin-left: 300px;
+  width: 318px;
+  margin-top: 27px;
+  margin-left: 321px;
   color: #ffffff;
   text-transform: uppercase;
 }
 
 .filter-range-title {
   margin-bottom: 9px;
-
-  font-weight: 600;
+  text-align: left;
+  font-weight: 700;
   font-size: 16px;
   line-height: 21px;
 }
@@ -804,7 +809,7 @@ input[type="radio"].visually-hidden {
 .price-controls {
   position: relative;
 
-  height: 36px;
+  height: 33px;
   margin-bottom: 20px;
 
   font-size: 0;
@@ -835,16 +840,17 @@ input[type="radio"].visually-hidden {
 
   cursor: pointer;
 }
-
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
-  padding-left: 65px;
-}
+  padding-left: 47px;
+
+ }
 
 .price-controls input {
   width: 50px;
   margin: 0;
+
+
 
   color: inherit;
   font: inherit;
@@ -900,9 +906,10 @@ input[type="radio"].visually-hidden {
 
 .btn-transparent {
   display: block;
-  margin: 0 auto;
+  margin: 0 85px;
   padding: 6px 35px;
 
+  font: inherit;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
@@ -916,7 +923,6 @@ input[type="radio"].visually-hidden {
 
 .btn-transparent:hover {
   color: #000000;
-
   background: #ffffff;
 }
 
@@ -934,7 +940,7 @@ input[type="radio"].visually-hidden {
 }
 
 .sort p {
-  margin-right: 45px;
+  margin-right: 40px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
@@ -944,19 +950,19 @@ input[type="radio"].visually-hidden {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+
+  color: rgba(0,0,0,0.3);
+  border-bottom: 1px dashed rgba(0,0,0,0.3);
+  margin-right: 34px;
 }
 
 .sort .number {
+  margin-right: 48px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 
-.sort a{
-  color: rgba(0,0,0,0.3);
-  border-bottom: 1px dashed rgba(0,0,0,0.3);
-  margin-right: 35px;
-}
 
 .sort a:hover,
 .sort a:focus {

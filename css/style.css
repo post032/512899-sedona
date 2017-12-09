@@ -90,12 +90,14 @@ input[type="radio"].visually-hidden {
 .site-navigation li:nth-of-type(2) {
   display: flex;
   justify-content: flex-start;
-  padding-right: 60px;
+
+  margin-right: 50px;
+
 }
 .site-navigation li:nth-of-type(3) {
   display: flex;
   justify-content: flex-end;
-  padding-left: 25px;
+  margin-left: 40px;
 }
 
 
@@ -112,6 +114,10 @@ input[type="radio"].visually-hidden {
 
 .site-navigation a:active {
   color: rgba(0,0,0,0.3);
+}
+
+.site-navigation .active {
+  color: #766357;
 }
 
 .logo {
@@ -444,10 +450,9 @@ input[type="radio"].visually-hidden {
 .date {
   padding-right: 38px;
   width: 293px;
-  height: 38px;
+  min-height: 34px;
   margin: 0;
-  border: none;
-  border-radius: 0;
+  border: solid 2px transparent;
   background-color: #f2f2f2;
   position: relative;
   outline: none;
@@ -456,11 +461,13 @@ input[type="radio"].visually-hidden {
 .date:hover,
 .date:focus {
   background-color: #ebebeb;
+  border: solid 2px transparent;
 }
 
 .date:active {
   background-color: #ffffff;
   border: 2px solid #ebebeb;
+
 }
 
 .date[placeholder] {
@@ -697,6 +704,7 @@ input[type="radio"].visually-hidden {
  .logo-html {
 
    padding-left: 10px;
+   margin-bottom: 7px;
    display: inline-block;
    width: 115px;
    height: 41px;
@@ -750,7 +758,7 @@ input[type="radio"].visually-hidden {
  margin-left: 97px;
 }
 
-.filters-item p {
+.filters-item h3 {
   text-align: left;
   margin-top: 28px;
   margin-bottom: 22px;
@@ -789,7 +797,6 @@ input[type="radio"].visually-hidden {
   margin-bottom: 23px;
 }
 
-
 .checkbox-custom .label {
   display: inline-block;
   vertical-align: middle;
@@ -809,6 +816,31 @@ input[type="radio"].visually-hidden {
   background: url("../img/checkbox-on.svg") no-repeat center;
 }
 
+.checkbox:checked:disabled + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 27px;
+  height: 23px;
+  background: url("../img/checkbox-on-g.svg") no-repeat center;
+}
+
+.checkbox:disabled + .checkbox-custom::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 23px;
+  height: 23px;
+  background: url("../img/checkbox-off-g.svg") no-repeat center;
+}
 
 /*стилизация "стоимость в сутки"*/
 .filter-range {
@@ -912,7 +944,7 @@ input[type="radio"].visually-hidden {
 .range-toggle:hover,
 .range-toggle:focus {
   background: #ababab;
-  border: 10px solid #ffffff;
+  border: 9px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
@@ -961,11 +993,17 @@ input[type="radio"].visually-hidden {
 
 }
 
-.sort p {
-  margin-right: 40px;
+.sort ul {
+  margin-left: -40px;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
+  list-style: none;
+  display: flex;
+}
+
+.sort li:first-of-type {
+  margin-left: 40px;
 }
 
 .sort a {
@@ -1003,8 +1041,10 @@ input[type="radio"].visually-hidden {
 }
 
 .sort .up {
+  margin-top: 10px;
  margin-left: 470px;
  fill: #cacaca;
+ font-size: 0;
 }
 .sort span:hover,
 .sort span:focus {
@@ -1016,8 +1056,10 @@ input[type="radio"].visually-hidden {
 }
 
 .sort .down {
+  margin-top: 10px;
   margin-left: 10px;
   fill: #81b3d2;
+  font-size: 0;
 }
 
 /*отели*/
@@ -1105,7 +1147,7 @@ input[type="radio"].visually-hidden {
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: nowrap;
-  height: 152px;
+  min-height: 149px;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
   }

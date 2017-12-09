@@ -20,7 +20,7 @@
           <li><a href="#">ИНФОРМАЦИЯ</a></li>
           <li><a href="#">ФОТО И ВИДЕО</a></li>
           <li><a href="#">КАРТА ШТАТА</a></li>
-          <li><a href="hotels.html">ГОСТИНИЦЫ</a></li>
+          <li><a class="active" href="hotels.html">ГОСТИНИЦЫ</a></li>
         </ul>
       </nav>
     </header>
@@ -31,14 +31,14 @@
         <h2 class="visually-hidden">Фильтр отелей</h2>
             <form class="filters-box" action="https://echo.htmlacademy.ru" method="get">
               <div class="filters-item">
-                <p>ИНФРАСТРУКТУРА:</p>
+                <h3>ИНФРАСТРУКТУРА:</h3>
                 <label>
-                  <input class="checkbox" type="checkbox" checked disabled>
+                  <input class="checkbox" type="checkbox" checked >
                   <span class="checkbox-custom"></span>
                   БАССЕЙН
                 </label>
                 <label>
-                  <input class="checkbox" type="checkbox" disabled>
+                  <input class="checkbox" type="checkbox">
                   <span class="checkbox-custom"></span>
                   ПАРКОВКА
                 </label>
@@ -49,7 +49,7 @@
                 </label>
               </div>
               <div class="filters-item">
-                <p>Тип жилья:</p>
+                <h3>Тип жилья:</h3>
                 <label>
                   <input class="checkbox" type="checkbox" checked>
                   <span class="checkbox-custom"></span>
@@ -85,12 +85,13 @@
 
             <div class="sort">
               <p class="number">Найдено: 3</p>
-              <p>СОРТИРОВКА:</p>
-                <a class="sort-active" href="#">ПО ЦЕНЕ</a>
-                <a href="#">ПО ТИПУ</a>
-                <a href="#">ПО РЕЙТИНГУ</a>
-                <span class="up"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg></span>
-                <span class="down"><svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg></span>
+              <ul>СОРТИРОВКА:
+                <li><a class="sort-active" href="#">ПО ЦЕНЕ</a></li>
+                <li><a href="#">ПО ТИПУ</a></li>
+                <li><a href="#">ПО РЕЙТИНГУ</a></li>
+              </ul>
+                <span class="up">по возрастанию<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg></span>
+                <span class="down">по убыванию<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg></span>
 
             </div>
       </section>

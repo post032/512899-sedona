@@ -40,6 +40,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-shadow: 0 0 40px 2px #dbdbdb;
           box-shadow: 0 0 40px 2px #dbdbdb;
   vertical-align: middle;
+  position: relative;
 }
 
 .main-navigation {
@@ -888,8 +889,8 @@ input[type="radio"].visually-hidden {
 
  .logo-html {
   padding-left: 10px;
-  margin-bottom: 7px;
   display: inline-block;
+  vertical-align: middle;
   width: 115px;
   height: 41px;
   fill: #231f20;
@@ -912,6 +913,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding: 0;
   background: url("../img/filter_background.jpg") no-repeat;
+  background-color: #7fa0c1;
   background-position: 0 -55px;
   width: 1200px;
   min-height: 304px;
@@ -926,7 +928,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  height: 218px;
+  min-height: 218px;
 }
 
 .filters-item {
@@ -1263,8 +1265,8 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.readmore p,
-.booking p {
+.readmore,
+.booking {
   margin-top: 6px;
   padding: 0;
   font-size: 14px;
@@ -1371,15 +1373,19 @@ input[type="radio"].visually-hidden {
 }
 
 .readmore {
-  margin: 0;
+  margin-top: 9px;
   width: 45%;
-  min-height: 45px;
   text-align: left;
   display: block;
 }
 
+.readmore:first-of-type,
+.booking:first-of-type {
+  margin-bottom: 6px;
+}
+
 .booking {
-  margin: 0;
+  margin-top: 9px;
   width: 55%;
   text-align: left;
   display: block;
@@ -1427,4 +1433,7 @@ input[type="radio"].visually-hidden {
   background-color: #f2f2f2;
   padding: 3px 12px;
   margin-top: 5px;
+}
+.starfull {
+  font-size: 0;
 }

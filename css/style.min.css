@@ -1,47 +1,3 @@
-@-webkit-keyframes bounce {
-    0% {
-        -webkit-transform: translateX(-5000px);
-        transform: translateX(-5000px)
-    }
-
-    60% {
-        -webkit-transform: translateX(500px);
-        transform: translateX(500px)
-    }
-
-    90% {
-        -webkit-transform: translateX(-500px);
-        transform: translateX(-500px)
-    }
-
-    to {
-        -webkit-transform: translateX(0);
-        transform: translateX(0)
-    }
-}
-
-@keyframes bounce {
-    0% {
-        -webkit-transform: translateX(-5000px);
-        transform: translateX(-5000px)
-    }
-
-    60% {
-        -webkit-transform: translateX(500px);
-        transform: translateX(500px)
-    }
-
-    90% {
-        -webkit-transform: translateX(-500px);
-        transform: translateX(-500px)
-    }
-
-    to {
-        -webkit-transform: translateX(0);
-        transform: translateX(0)
-    }
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -80,7 +36,8 @@ a {
     width: 1200px;
     -webkit-box-shadow: 0 0 40px 2px #dbdbdb;
     box-shadow: 0 0 40px 2px #dbdbdb;
-    vertical-align: middle
+    vertical-align: middle;
+    position: relative
 }
 
 .main-navigation,.site-navigation {
@@ -813,8 +770,8 @@ a {
 
 .logo-html {
     padding-left: 10px;
-    margin-bottom: 7px;
     display: inline-block;
+    vertical-align: middle;
     width: 115px;
     height: 41px;
     fill: #231f20
@@ -832,6 +789,7 @@ a {
     margin: 0;
     padding: 0;
     background: url(../img/filter_background.jpg) no-repeat;
+    background-color: #7fa0c1;
     background-position: 0 -55px;
     width: 1200px;
     min-height: 304px
@@ -846,7 +804,7 @@ a {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
-    height: 218px
+    min-height: 218px
 }
 
 .filters-item {
@@ -1166,11 +1124,13 @@ a {
     font-weight: 700
 }
 
-.booking p,.readmore p {
-    margin-top: 6px;
-    padding: 0;
+.booking,.booking a,.readmore {
     font-size: 14px;
-    line-height: 21px;
+    line-height: 21px
+}
+
+.booking,.readmore {
+    padding: 0;
     font-weight: 400
 }
 
@@ -1179,8 +1139,6 @@ a {
     width: 142px;
     min-height: 27px;
     color: #fff;
-    font-size: 14px;
-    line-height: 21px;
     font-weight: 700
 }
 
@@ -1267,19 +1225,22 @@ a {
     align-items: flex-start
 }
 
-.booking,.readmore {
-    margin: 0;
+.readmore {
+    margin-top: 9px;
+    width: 45%;
     text-align: left;
     display: block
 }
 
-.readmore {
-    min-height: 45px;
-    width: 45%
+.booking:first-of-type,.readmore:first-of-type {
+    margin-bottom: 6px
 }
 
 .booking {
-    width: 55%
+    margin-top: 9px;
+    width: 55%;
+    text-align: left;
+    display: block
 }
 
 .booking .booking-button,.readmore .readmore-button {
@@ -1321,4 +1282,52 @@ a {
     background-color: #f2f2f2;
     padding: 3px 12px;
     margin-top: 5px
+}
+
+.starfull {
+    font-size: 0
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        -webkit-transform: translateX(-5000px);
+        transform: translateX(-5000px)
+    }
+
+    60% {
+        -webkit-transform: translateX(500px);
+        transform: translateX(500px)
+    }
+
+    90% {
+        -webkit-transform: translateX(-500px);
+        transform: translateX(-500px)
+    }
+
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
+}
+
+@keyframes bounce {
+    0% {
+        -webkit-transform: translateX(-5000px);
+        transform: translateX(-5000px)
+    }
+
+    60% {
+        -webkit-transform: translateX(500px);
+        transform: translateX(500px)
+    }
+
+    90% {
+        -webkit-transform: translateX(-500px);
+        transform: translateX(-500px)
+    }
+
+    to {
+        -webkit-transform: translateX(0);
+        transform: translateX(0)
+    }
 }

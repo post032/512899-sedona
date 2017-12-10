@@ -1178,3 +1178,6 @@ input[type="radio"].visually-hidden {
   padding: 3px 12px;
   margin-top: 5px;
 }
+.starfull {
+  font-size: 0;
+}

@@ -726,7 +726,6 @@ a {
 .filters-item h3 {
   text-align: left;
   margin-top: 28px;
-  margin-bottom: 22px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
@@ -740,32 +739,37 @@ a {
 }
 
 .filters-item input {
-  margin-left: -10px;
   color: #ffffff;
 }
 
 .checkbox {
   opacity: 0;
 }
-.filters-item label::before {
+
+.checkbox label::before {
 content: "";
 display: inline-block;
-height: 23px;
-width: 23px;
-background: url("../img/checkbox-off.svg") no-repeat;
+height: 20px;
+width: 20px;
+border: 2px solid #ffffff;
+border-radius: 5px;
+margin-right: 10px;
+position: relative;
 }
 
-.filters-item label::after {
+.checkbox:checked+label::after {
 content: "";
 display: inline-block;
-height: 27px;
-width: 23px;
-background: url("../img/checkbox-on.svg") no-repeat;
+height: 22px;
+width: 10px;
+border-right: 5px solid #ffffff;
+border-bottom: 5px solid #ffffff;
+transform: rotate(45deg);
 position: absolute;
-top: 0;
-bottom: 0;
 left: 0;
 right: 0;
+top: 0;
+bottom: 0;
 }
 
 

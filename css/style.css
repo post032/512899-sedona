@@ -16,11 +16,8 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+.visually-hidden:not(:focus):not(:active), input[type="checkbox"].visually-hidden, input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -54,7 +51,7 @@ input[type="radio"].visually-hidden {
   flex-direction: column-reverse;
 }
 
-.site-navigation  {
+.site-navigation {
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -97,13 +94,12 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover, .site-navigation a:focus {
   color: #81b3d2;
 }
 
 .site-navigation a:active {
-  color: rgba(0,0,0,0.3);
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .site-navigation .active {
@@ -111,11 +107,11 @@ input[type="radio"].visually-hidden {
 }
 
 .logo {
- position: absolute;
- transform: translateX(-50%);
- top: 0px;
- left: 50%;
- z-index: 3;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 0px;
+  left: 50%;
+  z-index: 3;
 }
 
 .description {
@@ -156,9 +152,7 @@ input[type="radio"].visually-hidden {
   flex-grow: 0;
 }
 
-.features-item-1 h3,
-.features-item-2 h3,
-.features-item h3 {
+.features-item-1 h3, .features-item-2 h3, .features-item h3 {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
@@ -197,7 +191,7 @@ input[type="radio"].visually-hidden {
   width: 800px;
 }
 
-.blue h3{
+.blue h3 {
   display: block;
   width: 160px;
   margin-bottom: 25px;
@@ -311,6 +305,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
   margin-bottom: 2px;
 }
+
 .search {
   margin: 0;
   padding: 0;
@@ -366,14 +361,13 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
 }
 
-.button:hover,
-.button:focus {
+.button:hover, .button:focus {
   background-color: #604e43;
 }
 
 .button:active {
   background-color: #503e33;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .modal {
@@ -393,22 +387,19 @@ input[type="radio"].visually-hidden {
 }
 
 .modal-close {
- display: none;
+  display: none;
 }
 
 @keyframes bounce {
   0% {
     transform: translateX(-5000px);
   }
-
   60% {
     transform: translateX(500px);
   }
-
   90% {
     transform: translateX(-500px);
   }
-
   100% {
     transform: translateX(0);
   }
@@ -460,8 +451,7 @@ input[type="radio"].visually-hidden {
   outline: none;
 }
 
-.date:hover,
-.date:focus {
+.date:hover, .date:focus {
   background-color: #ebebeb;
   border: solid 2px transparent;
 }
@@ -495,15 +485,11 @@ input[type="radio"].visually-hidden {
   fill: #a9a9a9;
 }
 
-.arrival svg:hover,
-.leave svg:hover,
-.arrival svg:focus,
-.leave svg:focus {
+.arrival svg:hover, .leave svg:hover, .arrival svg:focus, .leave svg:focus {
   fill: #000000;
 }
 
-.arrival svg:active,
-.leave svg:active {
+.arrival svg:active, .leave svg:active {
   fill: #81b3d2;
 }
 
@@ -570,8 +556,7 @@ input[type="radio"].visually-hidden {
   position: relative;
 }
 
-.btn::before,
-.btn::after {
+.btn::before, .btn::after {
   content: "";
   position: absolute;
   top: 18px;
@@ -585,26 +570,21 @@ input[type="radio"].visually-hidden {
   transform: rotate(90deg);
 }
 
-.btn:hover::before,
-.btn:focus::before,
-.btn:hover::after,
-.btn:focus::after {
+.btn:hover::before, .btn:focus::before, .btn:hover::after, .btn:focus::after {
   background-color: #000000;
 }
 
-.btn:active::before,
-.btn:active::after {
+.btn:active::before, .btn:active::after {
   background-color: #81b3d4;
 }
 
-.modal-button:hover,
-.modal-button:focus {
+.modal-button:hover, .modal-button:focus {
   background-color: #669ec0;
 }
 
 .modal-button:active {
   background-color: #5496bd;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .map {
@@ -621,7 +601,7 @@ input[type="radio"].visually-hidden {
   padding-left: 72px;
   padding-right: 72px;
   color: #000000;
-  background-color: rgba(249,251,546,0.9);
+  background-color: rgba(249, 251, 546, 0.9);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -650,9 +630,10 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-social ul {
-  padding-right: 10px;
+  padding: 0;
   list-style: none;
   display: flex;
+  margin-left: 27px;
 }
 
 .social-button {
@@ -667,8 +648,7 @@ input[type="radio"].visually-hidden {
   justify-content: center;
 }
 
-.social-button:hover,
-.social-button:focus {
+.social-button:hover, .social-button:focus {
   background-color: #669ec0;
 }
 
@@ -692,7 +672,7 @@ input[type="radio"].visually-hidden {
   align-items: center;
 }
 
- .logo-html {
+.logo-html {
   padding-left: 10px;
   display: inline-block;
   vertical-align: bottom;
@@ -701,8 +681,7 @@ input[type="radio"].visually-hidden {
   fill: #231f20;
 }
 
-.logo-html:hover,
-.logo-html:focus {
+.logo-html:hover, .logo-html:focus {
   fill: #81b3d2;
 }
 
@@ -718,18 +697,17 @@ input[type="radio"].visually-hidden {
   margin: 0;
   padding-left: 72px;
   padding-right: 72px;
-  background: url("../img/filter_background.jpg") no-repeat;
+  background: url("../img/filter_background-2.jpg") no-repeat top center;
   background-color: #7fa0c1;
   background-size: cover;
-  background-position: 0 -55px;
-  min-height: 217px;
-  box-sizing: border-box;
+  min-height: 218px;
 }
 
 .filters-box {
   margin: 0;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   min-height: 218px;
 }
@@ -740,7 +718,6 @@ input[type="radio"].visually-hidden {
   min-height: 155px;
   color: #ffffff;
 }
-
 
 .filters-item:nth-last-of-type(2) {
   margin-left: 97px;
@@ -773,57 +750,12 @@ input[type="radio"].visually-hidden {
   padding: 0;
 }
 
-.checkbox-custom {
-  position: relative;
-  width: 23px;
-  height: 23px;
-  background: url("../img/checkbox-off.svg") no-repeat center;
-  margin-right: 18px;
-  margin-bottom: 23px;
-}
-
-.checkbox-custom .label {
+.checkbox label::before {
+  content: "";
   display: inline-block;
-  vertical-align: middle;
-}
-
-.checkbox:checked + .checkbox-custom::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 27px;
-  height: 23px;
-  background: url("../img/checkbox-on.svg") no-repeat center;
-}
-
-.checkbox:checked:disabled + .checkbox-custom::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 27px;
-  height: 23px;
-  background: url("../img/checkbox-on-g.svg") no-repeat center;
-}
-
-.checkbox:disabled + .checkbox-custom::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+  min-height: 23px;
   width: 23px;
-  height: 23px;
-  background: url("../img/checkbox-off-g.svg") no-repeat center;
+  background: url(".../img/checkbox-off.svg") no-repeat;
 }
 
 .filter-range {
@@ -876,7 +808,7 @@ input[type="radio"].visually-hidden {
 
 .price-controls .max-price {
   padding-left: 51px;
- }
+}
 
 .price-controls input {
   width: 70px;
@@ -915,8 +847,7 @@ input[type="radio"].visually-hidden {
   cursor: pointer;
 }
 
-.range-toggle:hover,
-.range-toggle:focus {
+.range-toggle:hover, .range-toggle:focus {
   background: #ababab;
   border: 9px solid #ffffff;
   margin-top: -1px;
@@ -973,17 +904,16 @@ input[type="radio"].visually-hidden {
 }
 
 .sort ul {
-    list-style: none;
-    display: flex;
+  list-style: none;
+  display: flex;
 }
-
 
 .sort .option {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
-  color: rgba(0,0,0,0.3);
-  border-bottom: 1px dashed rgba(0,0,0,0.3);
+  color: rgba(0, 0, 0, 0.3);
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
   margin-right: 34px;
 }
 
@@ -995,8 +925,7 @@ input[type="radio"].visually-hidden {
   width: 117px;
 }
 
-.sort .option:hover,
-.sort .option:focus {
+.sort .option:hover, .sort .option:focus {
   color: #81b3d2;
   border-bottom: 1px dashed #81b3d2;
 }
@@ -1016,18 +945,13 @@ input[type="radio"].visually-hidden {
   margin-left: 466px;
   fill: #cacaca;
   font-size: 0;
-
 }
 
-.sort .up:hover,
-.sort .down:hover,
-.sort .up:focus,
-.sort .down:focus {
+.sort .up:hover, .sort .down:hover, .sort .up:focus, .sort .down:focus {
   fill: #231f20;
 }
 
-.sort .up:active,
-.sort .down:active {
+.sort .up:active, .sort .down:active {
   fill: #81b3d2;
 }
 
@@ -1036,7 +960,6 @@ input[type="radio"].visually-hidden {
   margin-left: 12px;
   fill: #81b3d2;
   font-size: 0;
-
 }
 
 .hotels h3 {
@@ -1050,8 +973,7 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
-.hotels h3:hover,
-.hotels h3:focus {
+.hotels h3:hover, .hotels h3:focus {
   color: #81b3d2;
 }
 
@@ -1059,8 +981,7 @@ input[type="radio"].visually-hidden {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.readmore,
-.booking {
+.readmore, .booking {
   margin-top: 6px;
   padding: 0;
   font-size: 14px;
@@ -1068,7 +989,7 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
 }
 
-.booking a{
+.booking a {
   background-color: #766357;
   width: 142px;
   min-height: 27px;
@@ -1078,17 +999,16 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
-.booking a:hover,
-.booking a:focus {
+.booking a:hover, .booking a:focus {
   background-color: #604e43;
 }
 
 .booking a:active {
   background-color: #503e33;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
-.readmore a{
+.readmore a {
   background-color: #81b3d2;
   width: 142px;
   height: 27px;
@@ -1098,14 +1018,13 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
-.readmore a:hover,
-.readmore a:focus {
+.readmore a:hover, .readmore a:focus {
   background-color: #669ec0;
 }
 
 .readmore a:active {
   background-color: #5496bd;
-  color: rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels {
@@ -1121,7 +1040,7 @@ input[type="radio"].visually-hidden {
   min-height: 149px;
   border-top: 1px solid #e5e5e5;
   border-bottom: 1px solid #e5e5e5;
-  }
+}
 
 .hotel {
   margin-top: 24px;
@@ -1155,8 +1074,7 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
-.readmore:first-of-type,
-.booking:first-of-type {
+.readmore:first-of-type, .booking:first-of-type {
   margin-bottom: 6px;
 }
 
@@ -1198,7 +1116,9 @@ input[type="radio"].visually-hidden {
   padding: 3px 12px;
   margin-top: 5px;
 }
+
 .starfull {
   font-size: 0;
-  margin-right: 3px;
+  margin-right: 1px;
+  margin-left: 4px;
 }

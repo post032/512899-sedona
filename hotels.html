@@ -1,18 +1,19 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
-    <link href="css/normalize.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-  </head>
 
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+  <link href="css/normalize.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
   <div class="basic">
     <header class="main-header">
       <nav class="main-navigation">
-          <a href="index.html" class="logo">
+        <a href="index.html" class="logo">
             <img src="img/logo.png" width="138" height="70" alt="Седона">
           </a>
         <ul class="site-navigation">
@@ -28,59 +29,41 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр отелей</h2>
-            <form class="filters-box" action="https://echo.htmlacademy.ru" method="get">
-              <div class="filters-item">
-                <h3>ИНФРАСТРУКТУРА:</h3>
-                <label>
-                  <input class="checkbox" type="checkbox" checked >
-                  <span class="checkbox-custom"></span>
-                  БАССЕЙН
-                </label>
-                <label>
-                  <input class="checkbox" type="checkbox">
-                  <span class="checkbox-custom"></span>
-                  ПАРКОВКА
-                </label>
-                <label>
-                  <input class="checkbox" type="checkbox">
-                  <span class="checkbox-custom"></span>
-                  Wi-Fi
-                </label>
+        <form class="filters-box" action="https://echo.htmlacademy.ru" method="get">
+          <div class="filters-item">
+            <h3>ИНФРАСТРУКТУРА:</h3>
+            <input type="checkbox" class="checkbox" id="pool" checked>
+            <label for="pool">БАССЕЙН</label>
+            <input type="checkbox" class="checkbox" id="parking">
+            <label for="parking">ПАРКОВКА</label>
+            <input type="checkbox" class="checkbox" id="wifi">
+            <label for="wifi">Wi-Fi</label>
+          </div>
+          <div class="filters-item">
+            <h3>Тип жилья:</h3>
+            <input type="checkbox" class="checkbox" checked id="hotel">
+            <label for="hotel">Гостиница</label>
+            <input type="checkbox" class="checkbox" checked id="motel">
+            <label for="motel">МОТЕЛЬ</label>
+            <input type="checkbox" class="checkbox" checked id="apart">
+            <label for="apart">АПАРТАМЕНТЫ</label>
+          </div>
+          <div class="filter-range">
+            <div class="filter-range-title">Стоимость в сутки (Р):</div>
+            <div class="price-controls">
+              <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+              <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
+            </div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
-              <div class="filters-item">
-                <h3>Тип жилья:</h3>
-                <label>
-                  <input class="checkbox" type="checkbox" checked>
-                  <span class="checkbox-custom"></span>
-                  Гостиница
-                </label>
-                <label>
-                  <input class="checkbox" type="checkbox" checked>
-                  <span class="checkbox-custom"></span>
-                  МОТЕЛЬ
-                </label>
-                <label>
-                  <input class="checkbox" type="checkbox" checked>
-                  <span class="checkbox-custom"></span>
-                  АПАРТАМЕНТЫ
-                </label>
-              </div>
-              <div class="filter-range">
-                <div class="filter-range-title">Стоимость в сутки (Р):</div>
-                  <div class="price-controls">
-                    <label class="min-price">от <input type="text" name="min-price" value="0"></label>
-                    <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
-                  </div>
-                  <div class="range-controls">
-                    <div class="scale">
-                      <div class="bar"></div>
-                    </div>
-                    <div class="range-toggle range-toggle-min"></div>
-                    <div class="range-toggle range-toggle-max"></div>
-                  </div>
-                  <button class="btn-transparent" type="submit">Показать</button>
-                </div>
-            </form>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+            <button class="btn-transparent" type="submit">Показать</button>
+          </div>
+        </form>
       </section>
       <div class="sort">
         <p class="number">Найдено: 3</p>
@@ -90,8 +73,8 @@
           <li><a class="option" href="#">ПО ТИПУ</a></li>
           <li><a class="option" href="#">ПО РЕЙТИНГУ</a></li>
         </ul>
-          <a href="#" class="up">по возрастанию<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg></a>
-          <a href="#" class="down">по убыванию<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg></a>
+        <a href="#" class="up">по возрастанию<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 0L0 10h11z"/></svg></a>
+        <a href="#" class="down">по убыванию<svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10"><path d="M5.5 10L0 0h11"/></svg></a>
       </div>
 
       <div class="hotels">
@@ -99,20 +82,20 @@
           <img src="img/hotels/amara_resort_spa.jpg" width="135" height="90" alt="Amara Resort & Spa">
         </div>
         <div class="hotel">
-        <h3>Amara Resort & Spa</h3>
-        <div class="readmore">
-          Гостиница
+          <h3>Amara Resort & Spa</h3>
+          <div class="readmore">
+            Гостиница
+          </div>
+          <div class="booking">
+            ОТ 4000 Р.
+          </div>
+          <div class="readmore">
+            <a class="readmore-button" href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="booking">
+            <a class="booking-button" href="#">ЗАБРОНИРОВАТЬ</a>
+          </div>
         </div>
-        <div class="booking">
-          ОТ 4000 Р.
-        </div>
-        <div class="readmore">
-          <a class="readmore-button" href="#">ПОДРОБНЕЕ</a>
-        </div>
-        <div class="booking">
-          <a class="booking-button" href="#">ЗАБРОНИРОВАТЬ</a>
-        </div>
-      </div>
         <div class="rating">
           <div class="star">
             <span class="starfull">Звезда
@@ -153,20 +136,20 @@
           <img src="img/hotels/desert_quail_inn.jpg" width="135" height="90" alt="Desert Quail Inn">
         </div>
         <div class="hotel">
-        <h3>Desert Quail Inn</h3>
-        <div class="readmore">
-          Мотель
+          <h3>Desert Quail Inn</h3>
+          <div class="readmore">
+            Мотель
+          </div>
+          <div class="booking">
+            ОТ 3000 Р.
+          </div>
+          <div class="readmore">
+            <a class="readmore-button" href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="booking">
+            <a class="booking-button" href="#">ЗАБРОНИРОВАТЬ</a>
+          </div>
         </div>
-        <div class="booking">
-          ОТ 3000 Р.
-        </div>
-        <div class="readmore">
-          <a class="readmore-button" href="#">ПОДРОБНЕЕ</a>
-        </div>
-        <div class="booking">
-          <a class="booking-button" href="#">ЗАБРОНИРОВАТЬ</a>
-        </div>
-      </div>
         <div class="rating">
           <div class="star">
             <span class="starfull">Звезда
@@ -200,20 +183,20 @@
           <img src="img/hotels/villas_at_poco_diablo.jpg" width="135" height="90" alt="Villas at Poco Diablo">
         </div>
         <div class="hotel">
-        <h3>Villas at Poco Diablo</h3>
-        <div class="readmore">
-          Апартаменты
+          <h3>Villas at Poco Diablo</h3>
+          <div class="readmore">
+            Апартаменты
+          </div>
+          <div class="booking">
+            ОТ 2000 Р.
+          </div>
+          <div class="readmore">
+            <a class="readmore-button" href="#">ПОДРОБНЕЕ</a>
+          </div>
+          <div class="booking">
+            <a class="booking-button" href="#">ЗАБРОНИРОВАТЬ</a>
+          </div>
         </div>
-        <div class="booking">
-          ОТ 2000 Р.
-        </div>
-        <div class="readmore">
-          <a class="readmore-button" href="#">ПОДРОБНЕЕ</a>
-        </div>
-        <div class="booking">
-          <a class="booking-button" href="#">ЗАБРОНИРОВАТЬ</a>
-        </div>
-      </div>
         <div class="rating">
           <div class="star">
             <span class="starfull"> Звезда
@@ -237,7 +220,7 @@
     </main>
 
     <footer class="main-footer">
-      <div  class="footer-hashtag">
+      <div class="footer-hashtag">
         #visitSEDONA
       </div>
 
@@ -272,5 +255,6 @@
       </div>
     </footer>
   </div>
-  </body>
+</body>
+
 </html>

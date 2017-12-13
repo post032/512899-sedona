@@ -12,6 +12,10 @@ body {
   background-color: #f2f2f2;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  max-width: 100%;
+}
+
 a {
   text-decoration: none;
 }
@@ -429,6 +433,15 @@ a {
   margin-left: 18px;
 }
 
+.arrival label, .leave label {
+  max-width: 80px;
+  position: relative;
+}
+
+.count-adult label, .count-children label {
+  max-width: 80px;
+}
+
 .leave {
   font-size: 14px;
   line-height: 26px;
@@ -473,15 +486,17 @@ a {
 
 .arrival svg {
   position: absolute;
-  left: 485px;
-  top: 63px;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
   fill: #a9a9a9;
 }
 
 .leave svg {
   position: absolute;
-  left: 485px;
-  top: 132px;
+  bottom: 0;
+  right: 0;
+  margin-right: 10px;
   fill: #a9a9a9;
 }
 
